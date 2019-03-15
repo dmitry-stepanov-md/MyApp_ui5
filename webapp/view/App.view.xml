@@ -32,8 +32,8 @@
 								</f:SimpleForm>
 								<Toolbar>
 									<ToolbarSpacer/>
-									<Button text="{i18n>layoutPublishButton}" type="Accept"/>
-									<Button text="{i18n>layoutDraftButton}"/>
+									<Button text="{i18n>layoutPublishButton}" icon="sap-icon://outbox"/>
+									<Button text="{i18n>layoutDraftButton}" icon="sap-icon://save"/>
 								</Toolbar>
 							</IconTabFilter>
 							<IconTabFilter id="right" text="{i18n>gettingStartedFilter}">
