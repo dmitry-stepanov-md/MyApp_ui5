@@ -7,7 +7,13 @@ sap.ui.define([
 	return Controller.extend("opensap.MyApp_ui5.controller.App", {
 
 	onShowHello : function () {
-		MessageToast.show("Test message");
+			// read msg from i18n model
+			var oBundle = this.getView().getModel("i18n").getResourceBundle();
+			var sRecipient = this.getView().getModel("helloPanel").getProperty("/recipient/name");
+			var sMsg = oBundle.getText("myMsg", [sRecipient]);
+
+			// show message
+			MessageToast.show(sMsg);
 	}
 		
 	});

@@ -4,6 +4,7 @@
 		"_version": "1.3.0",
 		"id": "opensap.MyApp_ui5",
 		"type": "application",
+		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
 		"applicationVersion": {
@@ -44,6 +45,19 @@
 				}
 			}
 		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "opensap.MyApp_ui5.i18n.i18n"
+				}
+			},
+			"helloPanel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/helloPanel.json"
+			}
+		},
+
 		"contentDensities": {
 			"compact": true,
 			"cozy": true
