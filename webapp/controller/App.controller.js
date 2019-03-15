@@ -7,7 +7,6 @@ sap.ui.define([
 	return Controller.extend("opensap.MyApp_ui5.controller.App", {
 
 	onShowHello : function () {
-		/*eslint-disable */
 		MessageToast.show("Test message");
 	}
 		
