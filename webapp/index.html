@@ -13,7 +13,7 @@
 		data-sap-ui-compatVersion="edge"
 		data-sap-ui-preload="async"
 		data-sap-ui-resourceroots='{
-			"opensap.myapp": "./"
+			"opensap.MyApp_ui5": "./"
 		}'
 	>
 	</script>
@@ -21,8 +21,8 @@
 	<script>
 		sap.ui.getCore().attachInit(function () {
 			sap.ui.xmlview({
-				viewName: "opensap.myapp.view.App"
-			}).placeAt("mainContent");
+				viewName: "opensap.MyApp_ui5.view.App"
+			}).placeAt("content");
 
 		});
 	</script>
@@ -30,7 +30,7 @@
 <script src="https://sap.github.io/openSAP-ui5-course/Validator.js"></script>
 
 </head>
-<body class="sapUiBody" id="mainContent">
+<body class="sapUiBody" id="content">
 	<p>Test</p>
 </body>
 </html>
