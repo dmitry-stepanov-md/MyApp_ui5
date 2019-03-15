@@ -8,7 +8,7 @@
 						<items>
 							<IconTabFilter id="layouts" text="{i18n>layoutFilter}">
 								<MessageStrip type="Information" showIcon="true" text="Here's a Form Layout inside an Icon Tab Bar …"/>
-								<f:SimpleForm id="simpleFormChange" title="Address" editable="true" class="editableForm">
+								<f:SimpleForm id="simpleFormChange" title="Address" editable="true" class="editableForm sapUiSmallMarginTopBottom">
 									<f:content>
 										<Label text="{i18n>layoutFormName}"/>
 										<Input value="{address>/Name}"/>
@@ -36,7 +36,7 @@
 									<Button text="{i18n>layoutDraftButton}" icon="sap-icon://save"/>
 								</Toolbar>
 							</IconTabFilter>
-							<IconTabFilter id="right" text="{i18n>gettingStartedFilter}">
+							<IconTabFilter id="right" text="{i18n>gettingStartedFilter}" class="sapUiResponsiveContentPadding">
 								<Carousel>
 									<pages>
 										<Image src="https://ru.wikipedia.org/static/images/project-logos/ruwiki.png" height="200px"/>
