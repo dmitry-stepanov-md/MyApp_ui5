@@ -1,13 +1,19 @@
 <mvc:View
 	displayBlock="true"
 	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="opensap.MyApp_ui5.controller.App" >
 	<Carousel>
 		<pages>
-			<Image	src="https://ru.wikipedia.org/static/images/project-logos/ruwiki.png"
-					height="200px"/>
-			<Image	src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Wikipedia_Hello_World_Graphic.svg/2000px-Wikipedia_Hello_World_Graphic.svg.png"
-					height="200px"/>
+			<Image	
+				src="https://ru.wikipedia.org/static/images/project-logos/ruwiki.png"
+				height="200px"/>
+			<Image	
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Wikipedia_Hello_World_Graphic.svg/2000px-Wikipedia_Hello_World_Graphic.svg.png"
+				height="200px"/>
 		</pages>
 	</Carousel>
+	<Button
+		text="Say Hello!"
+		press="onShowHello"/>
 </mvc:View>
